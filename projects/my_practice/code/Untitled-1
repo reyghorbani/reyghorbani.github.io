@@ -1,0 +1,6 @@
+import os, pandas as pd
+
+out_dir = "projects/my_practice/results"
+os.makedirs(out_dir, exist_ok=True)
+
+pd.DataFrame({"a":[1,2,3]}).to_csv(f"{out_dir}/output.csv", index=False)
